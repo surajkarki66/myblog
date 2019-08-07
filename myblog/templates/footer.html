@@ -1,0 +1,49 @@
+{% load static %}
+<footer class="main-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="logo">
+              <h6 class="text-white">Stack</h6>
+            </div>
+            <div class="contact-details">
+              <p>Kathmandu,Nepal</p>
+              <p>Phone: 888 888 888 </p>
+              <p>Email: <a href="mailto:info@company.com">Info@Company.com</a></p>
+              <ul class="social-menu">
+                <li class="list-inline-item"><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li class="list-inline-item"><a href="#"><i class="fa fa-instagram"></i></a></li>
+                <li class="list-inline-item"><a href="#"><i class="fa fa-behance"></i></a></li>
+                <li class="list-inline-item"><a href="#"><i class="fa fa-pinterest"></i></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="menus d-flex">
+              <ul class="list-unstyled">
+                {% if request.user.is_authenticated %}
+                <li> <a href="/myaccount">My Account</a></li>
+                {% endif %}
+                <li> <a href="#">Privacy &amp; Policy</a></li>
+              </ul>
+            
+            </div>
+          </div>
+          <div class="col-md-4">
+
+              <ul class="list-unstyled">
+                  <li> <a href="#">Our Partners</a></li>
+                  <li> <a href="/faq">FAQ</a></li>
+                  <li> <a href="/contact">Contact</a></li>
+                </ul>
+           
+      </div>
+      <div class="col-md-6 text-md-right">
+         <br/> <p>&copy; 2019. All rights reserved. Stack</p>
+        </div>
+      </div>
+    
+    </footer>
+
+    

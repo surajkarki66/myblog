@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+
+
+<h2 style="padding-left: 100px">FREQUENTLY ASKED QUESTIONS</h2>
+
+
+{% for contact in contact %}
+
+<details style="padding-top: 15px"> 
+
+
+<summary style="padding-left: 100px">{{contact.desc}}</summary> 
+</details>
+
+
+
+{% endfor %}
+
+
+
+
+{% endblock %}
